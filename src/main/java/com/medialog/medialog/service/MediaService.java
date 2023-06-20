@@ -29,4 +29,8 @@ public class MediaService {
         bookRepository.save(book);
     }
 
+    public void deleteBook(Long id){
+        bookRepository.deleteById(id);
+    }
+
 }

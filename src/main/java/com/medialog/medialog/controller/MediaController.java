@@ -35,6 +35,11 @@ public class MediaController {
         mediaService.addNewBook(book);
     }
 
+    @DeleteMapping("deletebook")
+    public void deleteBook(@RequestParam Long id){
+        mediaService.deleteBook(id);
+    }
+
 
 
 }
